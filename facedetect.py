@@ -25,14 +25,14 @@ class Facedetect:
 	# Constructor 
 	def __init__(self):
 		# ======================================
-		# HaarCascade Face Detectoin 
+		# HaarCascade Face Detection 
 		# ======================================
 		self.face_cascade  = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
 		self.eye_cascade   = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_eye.xml')
 		# images in our dataset are classified in 7 categories
 		self.label_to_text = { 0:'anger', 1:'disgust', 2:'fear', 3:'happiness', 4:'sadness', 5:'surprise', 6:'neutral' }
 		# ======================================
-		# parameters passed 
+		# parameters Intialized
 		# ======================================
 		self.img_size    = 48   # img resize as per the input size of model
 		self.num_classes = 7 # categories of classes
@@ -45,7 +45,7 @@ class Facedetect:
 		# Line thickness of 2 px
 		self.thickness = 2
 
-		# Capturing video from webcam
+		# Intialized Camera for Capturing video from webcam
 		self.video_capture = cv2.VideoCapture(0)
 		self.tflite_model = tf.lite.Interpreter(model_path = "model.tflite")
 		self.input_details  = self.tflite_model.get_input_details()
