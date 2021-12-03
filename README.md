@@ -33,7 +33,7 @@ To understand Alexa Custom skill and how to set them up [Alexa Custom Skill kit]
 * *Commands.txt* is also in the repo that contains all the commands to install the dependencies and required libraries
 
 ### Basic WorkFlow
-
+![Flow Diagram](https://github.com/eengrhassaan/Alexa-Controlled-Differential-Drive-Bot/blob/main/assets/Alexa%20Bot%20Flow.png?raw=true)
 
 ### File Brief Overview:
 *  **lcdhelper.py:** Helper or custom module to write to 16x2 Character LCD from main thread.
