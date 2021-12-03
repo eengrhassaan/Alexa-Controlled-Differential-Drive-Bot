@@ -30,7 +30,7 @@ STATUSON = ['on','high']
 STATUSOFF = ['off','low']
 
 # Face Detection Class
-#file_ename = movement.py
+# file_ename = movement.py
 # Author    =
 
 ## Importing Required Libraries
